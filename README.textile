@@ -1,0 +1,32 @@
+h1. Find those localization keys!
+
+This is a small SBT plugin that lets you find localization keys in your Lift web application. The finder code was originally posted by Derek, so props to him for that, I have just made it available to the world ;-)
+
+h2. Usage
+
+First, add it to your SBT project plugins:
+
+<pre><code>
+  import sbt._
+  class Plugins(info: ProjectInfo) extends PluginDefinition(info) {
+    val locfinder = "eu.getintheloop" % "sbt-loc-plugin" % "0.1.0"
+  }
+</code></pre>
+
+Then, from your SBT prompt just hit:
+
+<code>
+  > find-locs
+</code>
+
+The result should be something like:
+
+<pre><code>
+  [info] == find-locs ==
+  [info] Here's a list of all the localization keys in your webapp: 
+
+  anotherthing=
+  mystring=
+
+  [info] == find-locs ==
+</code></pre>
