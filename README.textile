@@ -9,7 +9,7 @@ First, add it to your SBT project plugins:
 <pre><code>
   import sbt._
   class Plugins(info: ProjectInfo) extends PluginDefinition(info) {
-    val locfinder = "eu.getintheloop" % "sbt-loc-plugin" % "0.1.0"
+    val locfinder = "eu.getintheloop" % "sbt-locfinder-plugin" % "0.1.0"
   }
 </code></pre>
 
